@@ -1,44 +1,35 @@
-const body = document.body;
-const toggleThemeBtn = document.getElementById('toggle-theme');
-const themeIcon = toggleThemeBtn.querySelector('i');
+    const body = document.body;
+    const toggleButton = document.getElementById('toggle-theme');
+    const themeIcon = toggleButton.querySelector('i');
 
-toggleThemeBtn.addEventListener('click', () => {
-const currentTheme = body.getAttribute('data-theme');
-if (currentTheme === 'dark') {
-    body.setAttribute('data-theme', 'light');
-    toggleThemeBtn.classList.replace('btn-outline-light', 'btn-outline-dark');
-    themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-    toggleThemeBtn.innerHTML = '<i class="bi bi-sun-fill"></i> Light Mode';
-} else {
-    body.setAttribute('data-theme', 'dark');
-    toggleThemeBtn.classList.replace('btn-outline-dark', 'btn-outline-light');
-    themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-    toggleThemeBtn.innerHTML = '<i class="bi bi-moon-fill"></i> Dark Mode';
-}
-});
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
+    toggleButton.innerHTML = '<i class="bi bi-moon-fill"></i> Dark Mode';
+    } else {
+    body.classList.remove('dark-mode');
+    toggleButton.innerHTML = '<i class="bi bi-sun-fill"></i> Light Mode';
+    }
 
-// Add hover effects to service boxes 
-document.querySelectorAll('.service-box').forEach((box) => {
+    toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+    
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.innerHTML = '<i class="bi bi-moon-fill"></i> Dark Mode';
+    } else {
+        toggleButton.innerHTML = '<i class="bi bi-sun-fill"></i> Light Mode';
+    }
+    });
+
+    // Add to service boxes
+    document.querySelectorAll('.service-box').forEach((box) => {
         box.addEventListener('mouseover', () => {
         box.style.transform = 'scale(1.05)';
-        });
+    });
         box.addEventListener('mouseout', () => {
         box.style.transform = 'scale(1)';
-        });
-});
-
-
-const toggleButton = document.getElementById("toggle-mode");
-const contactSection = document.getElementById("contact");
-
-toggleButton.addEventListener("click", () => {
-    // Toggle the "dark-mode" class
-    contactSection.classList.toggle("dark-mode");
-
-    // Update the button text
-    if (contactSection.classList.contains("dark-mode")) {
-        toggleButton.textContent = "Switch to Light Mode";
-    } else {
-        toggleButton.textContent = "Switch to Dark Mode";
-    }
-});
+    });
+    });
