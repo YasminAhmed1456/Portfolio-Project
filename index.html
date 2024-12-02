@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yasmin Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="dark">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark container"
+      id=" navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Designe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Dark Mode Toggle Button -->
+          <button id="toggle-theme" class="btn btn-outline-light ms-3">
+            <i class="bi bi-moon-fill"></i> Dark Mode
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    
+    <section class="hero container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1>Hello, I'm <span style="color: #f39c12">Yasmin</span></h1>
+          <p>Front-End Developer | UI/UX Designer</p>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+          </div>
+          <a href="#" class="btn btn-cv mt-3">Download CV</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="images/img_home.svg"
+            alt="Phone Image"
+            class="phone-img img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-12">
+          <img src="images/yasmin.jpg" alt="Yasmin Ahmed" class="about-img" />
+          <div class="img_icons">
+            <img src="images/img_icon.png" alt="" class="img_icon3" />
+            <img src="images/img_icon3.png" alt="" class="img_icon2" />
+            <img src="images/img_icon2.png" alt="" class="img_icon1" />
+          </div>
+          <h3 class="name">Yasmin Ahmed</h3>
+        </div>
+        <div class="col-md-6">
+          <h2>About <span class="text-warning">Me</span></h2>
+          <p>
+            I'm Yasmin Ahmed, 21 years old. I am currently studying Computer
+            Science and Artificial Intelligence. I specialize in Front-End
+            Development and UI/UX design.
+          </p>
+          <p>
+            I'm passionate about creating web experiences that are user-friendly
+            and visually appealing. Currently, I'm working on developing my
+            skills in React and JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="services py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          My <span class="text-warning">Services</span>
+        </h2>
+        <div class="row align-items-center">
+          <!-- Left Services  -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-box p-4 text-center shadow">
+              <h3 class="text-warning">FRONT-END DEVELOPMENT</h3>
+              <p>
+                Specializing in building responsive, interactive, and
+                user-friendly web interfaces using HTML, CSS, and JavaScript.
+              </p>
+            </div>
+            <div class="service-box p-4 text-center shadow mt-4">
+              <h3 class="text-warning">UI/UX DESIGN</h3>
+              <p>
+                Designing intuitive and engaging user experiences with a focus
+                on usability and accessibility.
+              </p>
+            </div>
+            <div class="service-box p-4 text-center shadow mt-4">
+              <h3 class="text-warning">WEB DESIGN</h3>
+              <p>
+                Creating visually appealing and functional web designs tailored
+                to client needs and modern design trends.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center">
+            <img
+              src="images/img_home.svg"
+              alt="Portfolio Image"
+              class="img-fluid rounded"
+            />
+          </div>
+
+          <!-- Right Services  -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-box p-4 text-center shadow">
+              <h3 class="text-warning">WEB DEVELOPMENT</h3>
+              <p>
+                Developing full-stack web applications using modern frameworks
+                like React, Node.js, and Express.
+              </p>
+            </div>
+            <div class="service-box p-4 text-center shadow mt-4">
+              <h3 class="text-warning">RESPONSIVE DESIGN</h3>
+              <p>
+                Ensuring websites and applications are optimized for all screen
+                sizes, from mobile to desktop.
+              </p>
+            </div>
+            <div class="service-box p-4 text-center shadow mt-4">
+              <h3 class="text-warning">FRONT-END FRAMEWORKS</h3>
+              <p>
+                Building dynamic web apps with front-end frameworks like
+                React.js, Vue.js, and Angular.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="container my-5">
+      <h2 class="text-center text-white mb-4">
+        D<span class="text-warning">esignes</span>
+      </h2>
+      <section class="parent">
+        <!-- Left Content -->
+        <div class="left_content col-12 col-md-6 col-lg-4">
+          <div class="left_top d-flex">
+            <div class="left_top_left">
+              <img src="images/img_left topl.png" alt="img1">
+            </div>
+            <div class="left_top_rigth">
+              <img src="images/img_left rigth.png" alt="img2">
+              <img src="images/img_left top.png" alt="img3">
+            </div>
+          </div>
+          <div class="left_bottom">
+            <img src="images/img_left bottom.png" alt="img4">
+          </div>
+        </div>
+      
+        <!-- Center Content -->
+        <div class="center_content col-12 col-md-6 col-lg-4">
+          <div class="center_top">
+            <img src="images/cenetr.png" alt="img5">
+          </div>
+          <div class="center_bottom">
+            <img src="images/img_center bottom.png" alt="img6">
+            <img src="images/img_center bottom rigth.png" alt="img7">
+          </div>
+        </div>
+      
+        <!-- Right Content -->
+        <div class="rigth_content col-12 col-md-6 col-lg-4">
+          <div class="rigth_top">
+            <img src="images/img_rigth top.png" alt="img8">
+            <img src="images/img_rigth top2.png" alt="img9">
+          </div>
+          <div class="rigth_bottom">
+            <img src="images/img1.png" alt="img10">
+          </div>
+        </div>
+      </section>
+      
+    <section
+      id="blog-section"
+      class="d-flex justify-content-center align-items-center "
+    >
+      <div class="blog-container position-relative">
+        <div class="rectangle"></div>
+        <!-- Blog Title -->
+        <div class="blog-title position-relative">
+          <div class="circle text-center">Blog</div>
+        </div>
+        <!-- Images -->
+        <div class="image-container">
+          <img
+            src="images/img_blog1.png"
+            alt="Image 1"
+            class="img-item top-left"
+          />
+          <img
+            src="images/img_blog2.png"
+            alt="Image 2"
+            class="img-item top-center"
+          />
+          <img
+            src="images/img_blog3.png"
+            alt="Image 3"
+            class="img-item top-right"
+          />
+          <img
+            src="images/img_blog4.png"
+            alt="Image 4"
+            class="img-item bottom-left"
+          />
+          <img
+            src="images/img_blog5.png"
+            alt="Image 5"
+            class="img-item bottom-center"
+          />
+          <img
+            src="images/img_blog6.png"
+            alt="Image 6"
+            class="img-item bottom-right"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-left text-white mb-5">
+          Get in <span class="text-warning">Touch</span>
+        </h2>
+        <div class="row">
+          <!-- Form Column -->
+          <div class="col-12 col-md-6 mb-4">
+            <form class="form">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="first-name" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="first-name"
+                    placeholder="Your First Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="last-name" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last-name"
+                    placeholder="Your Last Name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info Column -->
+          <div class="col-12 col-md-6">
+            <div class="info_form">
+              <h2>CONTACT INFO</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, libero beatae omnis atque expedita perferendis
+                officia magnam praesentium vitae ex facere dolore architecto
+                possimus dolorem dolorum eos. Rem, aliquam placeat.
+              </p>
+
+              <div class="contact-item mb-3">
+                <i class="fas fa-map-marker-alt text-warning me-2"></i>
+                <strong>Address:</strong>
+                <p>El-Wasta Beni Suef.</p>
+              </div>
+
+              <div class="contact-item mb-3">
+                <i class="fas fa-envelope text-warning me-2"></i>
+                <strong>Email:</strong>
+                <a href="mailto:YasminAhmed@gmail.com">YasminAhmed@gmail.com</a>
+              </div>
+
+              <div class="contact-item mb-3">
+                <i class="fas fa-phone text-warning me-2"></i>
+                <strong>Phone:</strong>
+                <p>+2001123456982</p>
+              </div>
+
+              <div class="contact-item mb-3">
+                <i class="fab fa-skype text-warning me-2"></i>
+                <strong>Skype:</strong>
+                <a href="#">Yasmin.skype</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonial</h2>
+      <div class="row g-3">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+            <div class="text-center mb-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="images/img_review.png" alt="User" class="rounded-circle me-2">
+                <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+              </div>
+            </div>        
+            <h5>Gemma Nolen</h5>
+            <p class="text-muted">Google</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+            <div class="text-center mb-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="images/img_review.png" alt="User" class="rounded-circle me-2">
+                <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+              </div>
+            </div>        
+            <h5>Gemma Nolen</h5>
+            <p class="text-muted">Google</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+            <div class="text-center mb-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="images/img_review.png" alt="User" class="rounded-circle me-2">
+                <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+              </div>
+            </div>        
+            <h5>Gemma Nolen</h5>
+            <p class="text-muted">Google</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+            <div class="text-center mb-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="images/img_review.png" alt="User" class="rounded-circle me-2">
+                <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+              </div>
+            </div>        
+            <h5>Gemma Nolen</h5>
+            <p class="text-muted">Google</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+            <div class="text-center mb-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="images/img_review.png" alt="User" class="rounded-circle me-2">
+                <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+              </div>
+            </div>        
+            <h5>Gemma Nolen</h5>
+            <p class="text-muted">Google</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+            <div class="text-center mb-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="images/img_review.png" alt="User" class="rounded-circle me-2">
+                <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+              </div>
+            </div>        
+            <h5>Gemma Nolen</h5>
+            <p class="text-muted">Google</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Your name.</h5>
+          <p>desc</p>
+        </div>
+        <div class="col-md-2">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Help</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Newsletter</h5>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter Your Email Address">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 furino. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  Script File  -->
+    <script src="script.js"></script>
+  </body>
+</html>
