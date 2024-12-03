@@ -32,9 +32,10 @@ const toggleButton = document.getElementById("toggle-mode");
 const contactSection = document.getElementById("contact");
 
 toggleButton.addEventListener("click", () => {
-    
+    // Toggle the "dark-mode" class
     contactSection.classList.toggle("dark-mode");
 
+    // Update the button text
     if (contactSection.classList.contains("dark-mode")) {
         toggleButton.textContent = "Switch to Light Mode";
     } else {
